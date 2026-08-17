@@ -1,8 +1,56 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
   <circle cx="256" cy="256" r="245" fill="#74418a"/>
-  <path d="M256 360C215 325 170 318 110 325V165C170 155 220 175 256 210Z" fill="#ffffff"/>
-  <path d="M256 360C297 325 342 318 402 325V165C342 155 292 175 256 210Z" fill="#ffffff"/>
-  <path d="M256 210V360" stroke="#f47c2b" stroke-width="16" stroke-linecap="round"/>
-  <path d="M150 220C185 217 215 228 235 245" fill="none" stroke="#d5a8dc" stroke-width="12" stroke-linecap="round"/>
-  <path d="M362 220C327 217 297 228 277 245" fill="none" stroke="#ffb477" stroke-width="12" stroke-linecap="round"/>
+
+  <!-- Open book -->
+  <path
+    d="M256 365 C220 330 170 320 105 325 L105 155 C170 145 220 165 256 205 Z"
+    fill="#ffffff"
+  />
+
+  <path
+    d="M256 365 C292 330 342 320 407 325 L407 155 C342 145 292 165 256 205 Z"
+    fill="#ffffff"
+  />
+
+  <!-- Orange center binding -->
+  <path
+    d="M256 205 L256 365"
+    stroke="#f47c2b"
+    stroke-width="14"
+    stroke-linecap="round"
+  />
+
+  <!-- Purple page details -->
+  <path
+    d="M145 210 C185 207 215 218 235 238"
+    fill="none"
+    stroke="#d5a8dc"
+    stroke-width="12"
+    stroke-linecap="round"
+  />
+
+  <path
+    d="M145 255 C185 252 215 263 235 283"
+    fill="none"
+    stroke="#d5a8dc"
+    stroke-width="12"
+    stroke-linecap="round"
+  />
+
+  <!-- Orange page details -->
+  <path
+    d="M367 210 C327 207 297 218 277 238"
+    fill="none"
+    stroke="#ffb477"
+    stroke-width="12"
+    stroke-linecap="round"
+  />
+
+  <path
+    d="M367 255 C327 252 297 263 277 283"
+    fill="none"
+    stroke="#ffb477"
+    stroke-width="12"
+    stroke-linecap="round"
+  />
 </svg>
