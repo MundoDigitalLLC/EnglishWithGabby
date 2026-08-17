@@ -659,14 +659,14 @@ const translations = {
     "gabby.bio.title":
       "Teaching English with real life in mind.",
 
-    "gabby.bio.paragraph1":
-      "Bio text coming soon. This section will include Gabby's professional background, teaching experience, and the story behind English With Gabby.",
+"gabby.bio.paragraph1":
+  "English With Gabby is an online English school founded in 2020 with lots of determination and a desire to help people all over the world improve their English skills.",
 
-    "gabby.bio.paragraph2":
-      "It can also highlight the different countries and communities she has worked with, her experience teaching online, and how her approach has evolved over time.",
+"gabby.bio.paragraph2":
+  "Today, I am proud to say that we have enrolled students from all over the world, including the U.S., Canada, Mexico, Costa Rica, Korea, Ukraine, Italy, and many other countries.",
 
-    "gabby.bio.paragraph3":
-      "Once Gabby provides her full biography, this area can be expanded into a more personal founder story while keeping the page easy to read.",
+"gabby.bio.paragraph3":
+  "English With Gabby now has a team of excellent teachers who continue to provide exceptional, high-quality, private, and highly personalized classes.",
 
 
     "gabby.credentials.eyebrow":
@@ -1444,14 +1444,14 @@ const translations = {
     "gabby.bio.title":
       "Enseñando inglés con la vida real en mente.",
 
-    "gabby.bio.paragraph1":
-      "Biografía próximamente. Esta sección incluirá la trayectoria profesional de Gabby, su experiencia como profesora y la historia detrás de English With Gabby.",
+"gabby.bio.paragraph1":
+  "English With Gabby es una academia de inglés en línea fundada en 2020 con mucha determinación y con el deseo de ayudar a personas de todo el mundo a mejorar sus habilidades en inglés.",
 
-    "gabby.bio.paragraph2":
-      "También podrá destacar los diferentes países y comunidades con los que ha trabajado, su experiencia enseñando en línea y cómo su enfoque ha evolucionado con el tiempo.",
+"gabby.bio.paragraph2":
+  "Hoy me enorgullece decir que hemos tenido estudiantes de distintas partes del mundo, incluyendo Estados Unidos, Canadá, México, Costa Rica, Corea, Ucrania, Italia y muchos otros países.",
 
-    "gabby.bio.paragraph3":
-      "Cuando Gabby proporcione su biografía completa, esta sección podrá convertirse en una historia más personal manteniendo la página clara y fácil de leer.",
+"gabby.bio.paragraph3":
+  "English With Gabby cuenta actualmente con un excelente equipo de profesores que continúa ofreciendo clases privadas, altamente personalizadas y de excelente calidad.",
 
 
     "gabby.credentials.eyebrow":
