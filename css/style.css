@@ -1470,39 +1470,62 @@ p {
    RETAILERS
 ========================================================= */
 
-/* =========================================================
-   BRILLIANT - RETAILER GRID
-========================================================= */
-
+/* Mobile-first: one card per row */
 .retailer-grid {
-  display: grid;
-
-  /* Six internal columns let us perfectly center
-     a 3-card first row and 2-card second row */
-  grid-template-columns: repeat(6, 1fr);
-
-  gap: 1.5rem;
-
+  width: 100%;
   max-width: 1100px;
+
   margin: 2.5rem auto 0;
+
+  display: grid;
+  grid-template-columns: 1fr;
+
+  gap: 18px;
 }
-
-
-/* Each retailer occupies two columns */
 
 .retailer-card {
-  grid-column: span 2;
+  min-width: 0;
+
+  padding: 28px 22px;
+
+  background: white;
+
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+
+  text-align: center;
+
+  box-shadow: var(--shadow-soft);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
+.retailer-name {
+  margin-bottom: 10px;
 
-/* Center the final two retailer cards */
+  color: var(--purple-900);
 
-.retailer-card:nth-child(4) {
-  grid-column: 2 / span 2;
+  font-family: "Fredoka", sans-serif;
+
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.15;
 }
 
-.retailer-card:nth-child(5) {
-  grid-column: 4 / span 2;
+.retailer-card p {
+  margin-bottom: 0;
+
+  color: var(--ink-soft);
+}
+
+.retailer-help {
+  max-width: 500px;
+
+  margin: 35px auto 0;
+
+  text-align: center;
 }
 
 /* =========================================================
@@ -2323,10 +2346,21 @@ p {
   .brilliant-benefits-grid,
   .gabby-values-grid,
   .gabby-philosophy-grid,
-  .retailer-grid,
   .classes-testimonial-grid {
     grid-template-columns:
       repeat(3, 1fr);
+  }
+
+  /* Retailers: two columns on tablet */
+  .retailer-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .retailer-card:nth-child(5) {
+    grid-column: 1 / -1;
+
+    width: min(100%, 520px);
+    justify-self: center;
   }
 
   .challenge-grid {
@@ -2595,6 +2629,28 @@ p {
   .classes-process-grid {
     grid-template-columns:
       repeat(4, 1fr);
+  }
+
+  /* Retailers: 3 cards on top, 2 centered below */
+  .retailer-grid {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: 24px;
+  }
+
+  .retailer-card {
+    grid-column: span 2;
+    width: auto;
+    justify-self: stretch;
+  }
+
+  .retailer-card:nth-child(4) {
+    grid-column: 2 / span 2;
+  }
+
+  .retailer-card:nth-child(5) {
+    grid-column: 4 / span 2;
+    width: auto;
+    justify-self: stretch;
   }
 
   .floating-whatsapp {
