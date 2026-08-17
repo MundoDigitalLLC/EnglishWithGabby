@@ -1,6 +1,6 @@
 /* =========================================================
    ENGLISH WITH GABBY
-   MAIN JAVASCRIPT
+   COMPLETE SITE JAVASCRIPT
 ========================================================= */
 
 "use strict";
@@ -11,40 +11,50 @@
 ========================================================= */
 
 const SITE_CONFIG = {
+
   defaultLanguage: "en",
-  supportedLanguages: ["en", "es"],
-  languageStorageKey: "englishWithGabbyLanguage",
-  whatsappNumber: "593987807383"
+
+  supportedLanguages: [
+    "en",
+    "es"
+  ],
+
+  languageStorageKey:
+    "englishWithGabbyLanguage",
+
+  whatsappNumber:
+    "593987807383"
+
 };
 
 
 /* =========================================================
-   DOM READY
+   START SITE
 ========================================================= */
 
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener(
+  "DOMContentLoaded",
+  () => {
 
-  initializeLanguage();
-  initializeMobileMenu();
-  initializeBrilliantGallery();
-  initializeSmoothScrolling();
-  initializeCurrentYear();
+    initializeLanguage();
 
-});
+    initializeMobileMenu();
+
+    initializeProductGalleries();
+
+    initializeSmoothScrolling();
+
+    initializeCurrentYear();
+
+    initializeExternalLinks();
+
+  }
+);
 
 
 /* =========================================================
-   LANGUAGE SYSTEM
+   LANGUAGE
 ========================================================= */
-
-/*
-   Determine which language should load.
-
-   Priority:
-   1. Previously selected language in localStorage
-   2. Browser language if Spanish
-   3. English by default
-*/
 
 function getInitialLanguage() {
 
@@ -55,19 +65,22 @@ function getInitialLanguage() {
         SITE_CONFIG.languageStorageKey
       );
 
+
     if (
       savedLanguage &&
       SITE_CONFIG.supportedLanguages.includes(
         savedLanguage
       )
     ) {
+
       return savedLanguage;
+
     }
 
   } catch (error) {
 
     console.warn(
-      "Language preference could not be read.",
+      "Could not read language preference.",
       error
     );
 
@@ -82,8 +95,12 @@ function getInitialLanguage() {
     ).toLowerCase();
 
 
-  if (browserLanguage.startsWith("es")) {
+  if (
+    browserLanguage.startsWith("es")
+  ) {
+
     return "es";
+
   }
 
 
@@ -92,22 +109,16 @@ function getInitialLanguage() {
 }
 
 
-
 /* =========================================================
-   INITIALIZE LANGUAGE
+   INITIALIZE LANGUAGE BUTTONS
 ========================================================= */
 
 function initializeLanguage() {
 
-  const languageButtons =
+  const buttons =
     document.querySelectorAll(
       ".language-btn[data-language]"
     );
-
-
-  if (!languageButtons.length) {
-    return;
-  }
 
 
   const initialLanguage =
@@ -120,37 +131,40 @@ function initializeLanguage() {
   );
 
 
-  languageButtons.forEach((button) => {
+  buttons.forEach(
+    (button) => {
 
-    button.addEventListener(
-      "click",
-      () => {
+      button.addEventListener(
+        "click",
+        () => {
 
-        const selectedLanguage =
-          button.dataset.language;
+          const language =
+            button.dataset.language;
 
 
-        if (
-          !SITE_CONFIG.supportedLanguages.includes(
-            selectedLanguage
-          )
-        ) {
-          return;
+          if (
+            !SITE_CONFIG.supportedLanguages.includes(
+              language
+            )
+          ) {
+
+            return;
+
+          }
+
+
+          setLanguage(
+            language,
+            true
+          );
+
         }
+      );
 
-
-        setLanguage(
-          selectedLanguage,
-          true
-        );
-
-      }
-    );
-
-  });
+    }
+  );
 
 }
-
 
 
 /* =========================================================
@@ -167,14 +181,12 @@ function setLanguage(
       language
     )
   ) {
+
     language =
       SITE_CONFIG.defaultLanguage;
+
   }
 
-
-  /*
-     Make sure translations.js loaded correctly.
-  */
 
   if (
     typeof translations === "undefined" ||
@@ -182,7 +194,7 @@ function setLanguage(
   ) {
 
     console.error(
-      "Translation dictionary is unavailable."
+      "Translation dictionary unavailable."
     );
 
     return;
@@ -190,94 +202,74 @@ function setLanguage(
   }
 
 
-  /*
-     Update the HTML language attribute.
-  */
-
   document.documentElement.lang =
     language;
 
 
-  /*
-     Translate all visible elements using data-i18n.
-  */
-
   document
-    .querySelectorAll("[data-i18n]")
-    .forEach((element) => {
+    .querySelectorAll(
+      "[data-i18n]"
+    )
+    .forEach(
+      (element) => {
 
-      const translationKey =
-        element.dataset.i18n;
+        const key =
+          element.dataset.i18n;
 
 
-      const translatedText =
-        translations[language][translationKey];
+        const value =
+          translations[language][key];
 
 
-      if (
-        typeof translatedText === "string"
-      ) {
+        if (
+          typeof value === "string"
+        ) {
 
-        element.textContent =
-          translatedText;
+          element.textContent =
+            value;
+
+        }
 
       }
+    );
 
-    });
-
-
-  /*
-     Update language button states.
-  */
 
   document
     .querySelectorAll(
       ".language-btn[data-language]"
     )
-    .forEach((button) => {
+    .forEach(
+      (button) => {
 
-      const isActive =
-        button.dataset.language ===
-        language;
-
-
-      button.classList.toggle(
-        "active",
-        isActive
-      );
+        const active =
+          button.dataset.language ===
+          language;
 
 
-      button.setAttribute(
-        "aria-pressed",
-        String(isActive)
-      );
-
-    });
+        button.classList.toggle(
+          "active",
+          active
+        );
 
 
-  /*
-     Update translated accessibility labels.
-  */
+        button.setAttribute(
+          "aria-pressed",
+          String(active)
+        );
+
+      }
+    );
+
 
   updateAccessibilityLabels(
     language
   );
 
 
-  /*
-     Change WhatsApp message depending
-     on selected language.
-  */
-
   updateWhatsAppLinks(
     language
   );
 
-
-  /*
-     Save preference so the language
-     persists between pages.
-  */
 
   if (savePreference) {
 
@@ -291,7 +283,7 @@ function setLanguage(
     } catch (error) {
 
       console.warn(
-        "Language preference could not be saved.",
+        "Could not save language preference.",
         error
       );
 
@@ -300,19 +292,12 @@ function setLanguage(
   }
 
 
-  /*
-     Custom event.
-
-     This lets future pages respond
-     whenever the language changes.
-  */
-
   document.dispatchEvent(
     new CustomEvent(
       "languageChanged",
       {
         detail: {
-          language: language
+          language
         }
       }
     )
@@ -321,9 +306,8 @@ function setLanguage(
 }
 
 
-
 /* =========================================================
-   ACCESSIBILITY LABEL TRANSLATIONS
+   ACCESSIBILITY LABELS
 ========================================================= */
 
 function updateAccessibilityLabels(
@@ -338,58 +322,62 @@ function updateAccessibilityLabels(
 
   if (menuToggle) {
 
-    const menuIsOpen =
+    const open =
       menuToggle.getAttribute(
         "aria-expanded"
       ) === "true";
 
 
-    if (language === "es") {
+    menuToggle.setAttribute(
 
-      menuToggle.setAttribute(
-        "aria-label",
-        menuIsOpen
-          ? "Cerrar menú de navegación"
-          : "Abrir menú de navegación"
-      );
-
-    } else {
-
-      menuToggle.setAttribute(
-        "aria-label",
-        menuIsOpen
-          ? "Close navigation menu"
-          : "Open navigation menu"
-      );
-
-    }
-
-  }
-
-
-  const whatsappButton =
-    document.querySelector(
-      ".floating-whatsapp"
-    );
-
-
-  if (whatsappButton) {
-
-    whatsappButton.setAttribute(
       "aria-label",
+
       language === "es"
-        ? "Escríbele a English With Gabby por WhatsApp"
-        : "Message English With Gabby on WhatsApp"
+
+        ? (
+            open
+              ? "Cerrar menú de navegación"
+              : "Abrir menú de navegación"
+          )
+
+        : (
+            open
+              ? "Close navigation menu"
+              : "Open navigation menu"
+          )
+
     );
 
   }
+
+
+  document
+    .querySelectorAll(
+      ".floating-whatsapp"
+    )
+    .forEach(
+      (button) => {
+
+        button.setAttribute(
+
+          "aria-label",
+
+          language === "es"
+
+            ? "Escríbele a English With Gabby por WhatsApp"
+
+            : "Message English With Gabby on WhatsApp"
+
+        );
+
+      }
+    );
 
 }
 
 
-
 /* =========================================================
-   WHATSAPP LANGUAGE SYSTEM
+   WHATSAPP
 ========================================================= */
 
 function updateWhatsAppLinks(
@@ -400,7 +388,9 @@ function updateWhatsAppLinks(
     typeof translations === "undefined" ||
     !translations[language]
   ) {
+
     return;
+
   }
 
 
@@ -411,11 +401,13 @@ function updateWhatsAppLinks(
 
 
   if (!message) {
+
     return;
+
   }
 
 
-  const whatsappURL =
+  const url =
     "https://wa.me/" +
     SITE_CONFIG.whatsappNumber +
     "?text=" +
@@ -426,69 +418,66 @@ function updateWhatsAppLinks(
     .querySelectorAll(
       "[data-whatsapp-link]"
     )
-    .forEach((link) => {
+    .forEach(
+      (link) => {
 
-      link.href =
-        whatsappURL;
+        link.href =
+          url;
 
-    });
+      }
+    );
 
 }
 
 
-
 /* =========================================================
-   MOBILE NAVIGATION
+   MOBILE MENU
 ========================================================= */
 
 function initializeMobileMenu() {
 
-  const menuToggle =
+  const toggle =
     document.querySelector(
       ".menu-toggle"
     );
 
 
-  const mobileMenu =
+  const menu =
     document.getElementById(
       "mobileMenu"
     );
 
 
   if (
-    !menuToggle ||
-    !mobileMenu
+    !toggle ||
+    !menu
   ) {
+
     return;
+
   }
 
 
-  /*
-     Toggle menu when hamburger is tapped.
-  */
-
-  menuToggle.addEventListener(
+  toggle.addEventListener(
     "click",
     () => {
 
-      const isOpen =
-        mobileMenu.classList.contains(
+      if (
+        menu.classList.contains(
           "open"
-        );
-
-
-      if (isOpen) {
+        )
+      ) {
 
         closeMobileMenu(
-          menuToggle,
-          mobileMenu
+          toggle,
+          menu
         );
 
       } else {
 
         openMobileMenu(
-          menuToggle,
-          mobileMenu
+          toggle,
+          menu
         );
 
       }
@@ -497,32 +486,26 @@ function initializeMobileMenu() {
   );
 
 
-  /*
-     Close after selecting a navigation link.
-  */
-
-  mobileMenu
+  menu
     .querySelectorAll("a")
-    .forEach((link) => {
+    .forEach(
+      (link) => {
 
-      link.addEventListener(
-        "click",
-        () => {
+        link.addEventListener(
+          "click",
+          () => {
 
-          closeMobileMenu(
-            menuToggle,
-            mobileMenu
-          );
+            closeMobileMenu(
+              toggle,
+              menu
+            );
 
-        }
-      );
+          }
+        );
 
-    });
+      }
+    );
 
-
-  /*
-     Close when Escape is pressed.
-  */
 
   document.addEventListener(
     "keydown",
@@ -530,18 +513,18 @@ function initializeMobileMenu() {
 
       if (
         event.key === "Escape" &&
-        mobileMenu.classList.contains(
+        menu.classList.contains(
           "open"
         )
       ) {
 
         closeMobileMenu(
-          menuToggle,
-          mobileMenu
+          toggle,
+          menu
         );
 
 
-        menuToggle.focus();
+        toggle.focus();
 
       }
 
@@ -549,25 +532,20 @@ function initializeMobileMenu() {
   );
 
 
-  /*
-     If the browser becomes desktop-sized
-     while the menu is open, reset it.
-  */
-
   window.addEventListener(
     "resize",
     () => {
 
       if (
         window.innerWidth >= 900 &&
-        mobileMenu.classList.contains(
+        menu.classList.contains(
           "open"
         )
       ) {
 
         closeMobileMenu(
-          menuToggle,
-          mobileMenu
+          toggle,
+          menu
         );
 
       }
@@ -578,27 +556,26 @@ function initializeMobileMenu() {
 }
 
 
-
 /* =========================================================
    OPEN MOBILE MENU
 ========================================================= */
 
 function openMobileMenu(
-  menuToggle,
-  mobileMenu
+  toggle,
+  menu
 ) {
 
-  mobileMenu.classList.add(
+  menu.classList.add(
     "open"
   );
 
 
-  menuToggle.classList.add(
+  toggle.classList.add(
     "active"
   );
 
 
-  menuToggle.setAttribute(
+  toggle.setAttribute(
     "aria-expanded",
     "true"
   );
@@ -609,15 +586,17 @@ function openMobileMenu(
     SITE_CONFIG.defaultLanguage;
 
 
-  menuToggle.setAttribute(
+  toggle.setAttribute(
+
     "aria-label",
+
     language === "es"
       ? "Cerrar menú de navegación"
       : "Close navigation menu"
+
   );
 
 }
-
 
 
 /* =========================================================
@@ -625,21 +604,21 @@ function openMobileMenu(
 ========================================================= */
 
 function closeMobileMenu(
-  menuToggle,
-  mobileMenu
+  toggle,
+  menu
 ) {
 
-  mobileMenu.classList.remove(
+  menu.classList.remove(
     "open"
   );
 
 
-  menuToggle.classList.remove(
+  toggle.classList.remove(
     "active"
   );
 
 
-  menuToggle.setAttribute(
+  toggle.setAttribute(
     "aria-expanded",
     "false"
   );
@@ -650,32 +629,86 @@ function closeMobileMenu(
     SITE_CONFIG.defaultLanguage;
 
 
-  menuToggle.setAttribute(
+  toggle.setAttribute(
+
     "aria-label",
+
     language === "es"
       ? "Abrir menú de navegación"
       : "Open navigation menu"
+
   );
 
 }
 
 
-
 /* =========================================================
-   BRILLIANT HOMEPAGE PRODUCT GALLERY
+   PRODUCT GALLERIES
 ========================================================= */
 
-function initializeBrilliantGallery() {
+function initializeProductGalleries() {
+
+  initializeGallery({
+
+    mainImageSelector:
+      "#homeBrilliantImage",
+
+    thumbnailSelector:
+      ".home-product-thumb",
+
+    imageDataAttribute:
+      "homeProductImage",
+
+    altDataAttribute:
+      "homeProductAlt"
+
+  });
+
+
+  initializeGallery({
+
+    mainImageSelector:
+      "#brilliantMainImage",
+
+    thumbnailSelector:
+      ".brilliant-thumb",
+
+    imageDataAttribute:
+      "brilliantImage",
+
+    altDataAttribute:
+      "brilliantAlt"
+
+  });
+
+}
+
+
+/* =========================================================
+   GENERIC GALLERY FUNCTION
+========================================================= */
+
+function initializeGallery({
+
+  mainImageSelector,
+
+  thumbnailSelector,
+
+  imageDataAttribute,
+
+  altDataAttribute
+
+}) {
 
   const mainImage =
-    document.getElementById(
-      "homeBrilliantImage"
+    document.querySelector(
+      mainImageSelector
     );
 
 
   const thumbnails =
     document.querySelectorAll(
-      ".home-product-thumb"
+      thumbnailSelector
     );
 
 
@@ -683,35 +716,45 @@ function initializeBrilliantGallery() {
     !mainImage ||
     !thumbnails.length
   ) {
+
     return;
+
   }
 
 
   thumbnails.forEach(
-    (thumbnail) => {
+    (thumbnail, index) => {
+
+      thumbnail.setAttribute(
+        "aria-pressed",
+        index === 0
+          ? "true"
+          : "false"
+      );
+
 
       thumbnail.addEventListener(
         "click",
         () => {
 
-          const newImage =
-            thumbnail.dataset
-              .homeProductImage;
+          const image =
+            thumbnail.dataset[
+              imageDataAttribute
+            ];
 
 
-          const newAlt =
-            thumbnail.dataset
-              .homeProductAlt;
+          const alt =
+            thumbnail.dataset[
+              altDataAttribute
+            ];
 
 
-          if (!newImage) {
+          if (!image) {
+
             return;
+
           }
 
-
-          /*
-             Small transition effect.
-          */
 
           mainImage.classList.add(
             "changing"
@@ -722,13 +765,13 @@ function initializeBrilliantGallery() {
             () => {
 
               mainImage.src =
-                newImage;
+                image;
 
 
-              if (newAlt) {
+              if (alt) {
 
                 mainImage.alt =
-                  newAlt;
+                  alt;
 
               }
 
@@ -741,10 +784,6 @@ function initializeBrilliantGallery() {
             120
           );
 
-
-          /*
-             Update active thumbnail.
-          */
 
           thumbnails.forEach(
             (item) => {
@@ -779,31 +818,11 @@ function initializeBrilliantGallery() {
     }
   );
 
-
-  /*
-     Set correct accessibility state
-     when the page first loads.
-  */
-
-  thumbnails.forEach(
-    (thumbnail, index) => {
-
-      thumbnail.setAttribute(
-        "aria-pressed",
-        index === 0
-          ? "true"
-          : "false"
-      );
-
-    }
-  );
-
 }
 
 
-
 /* =========================================================
-   SMOOTH SCROLLING
+   SMOOTH SCROLL
 ========================================================= */
 
 function initializeSmoothScrolling() {
@@ -812,83 +831,133 @@ function initializeSmoothScrolling() {
     .querySelectorAll(
       'a[href^="#"]'
     )
-    .forEach((link) => {
+    .forEach(
+      (link) => {
 
-      link.addEventListener(
-        "click",
-        (event) => {
+        link.addEventListener(
+          "click",
+          (event) => {
 
-          const targetID =
-            link.getAttribute(
-              "href"
-            );
+            const href =
+              link.getAttribute(
+                "href"
+              );
 
 
-          if (
-            !targetID ||
-            targetID === "#"
-          ) {
-            return;
+            if (
+              !href ||
+              href === "#"
+            ) {
+
+              return;
+
+            }
+
+
+            const target =
+              document.querySelector(
+                href
+              );
+
+
+            if (!target) {
+
+              return;
+
+            }
+
+
+            event.preventDefault();
+
+
+            const reducedMotion =
+              window.matchMedia(
+                "(prefers-reduced-motion: reduce)"
+              ).matches;
+
+
+            target.scrollIntoView({
+
+              behavior:
+                reducedMotion
+                  ? "auto"
+                  : "smooth",
+
+              block:
+                "start"
+
+            });
+
           }
+        );
 
-
-          const target =
-            document.querySelector(
-              targetID
-            );
-
-
-          if (!target) {
-            return;
-          }
-
-
-          event.preventDefault();
-
-
-          const reduceMotion =
-            window.matchMedia(
-              "(prefers-reduced-motion: reduce)"
-            ).matches;
-
-
-          target.scrollIntoView({
-            behavior:
-              reduceMotion
-                ? "auto"
-                : "smooth",
-
-            block:
-              "start"
-          });
-
-        }
-      );
-
-    });
+      }
+    );
 
 }
 
 
-
 /* =========================================================
-   COPYRIGHT YEAR
+   CURRENT YEAR
 ========================================================= */
 
 function initializeCurrentYear() {
 
-  const yearElement =
-    document.getElementById(
-      "currentYear"
+  document
+    .querySelectorAll(
+      "#currentYear"
+    )
+    .forEach(
+      (element) => {
+
+        element.textContent =
+          new Date().getFullYear();
+
+      }
     );
 
-
-  if (!yearElement) {
-    return;
-  }
+}
 
 
-  yearElement.textContent =
-    new Date().getFullYear();
+/* =========================================================
+   EXTERNAL LINK SECURITY
+========================================================= */
+
+function initializeExternalLinks() {
+
+  document
+    .querySelectorAll(
+      'a[target="_blank"]'
+    )
+    .forEach(
+      (link) => {
+
+        const existingRel =
+          link.getAttribute(
+            "rel"
+          ) || "";
+
+
+        if (
+          !existingRel.includes(
+            "noopener"
+          )
+        ) {
+
+          link.setAttribute(
+
+            "rel",
+
+            (
+              existingRel +
+              " noopener noreferrer"
+            ).trim()
+
+          );
+
+        }
+
+      }
+    );
 
 }
