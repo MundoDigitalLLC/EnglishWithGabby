@@ -441,7 +441,7 @@ p {
 }
 
 .language-btn {
-  min-width: 52px;
+  min-width: 58px;
   min-height: 32px;
 
   padding: 4px 7px;
@@ -472,7 +472,17 @@ p {
 }
 
 .language-flag {
-  font-size: 1rem;
+  width: 22px;
+  height: 14px;
+
+  display: block;
+
+  flex-shrink: 0;
+
+  border-radius: 2px;
+
+  box-shadow:
+    0 0 0 1px rgba(0, 0, 0, 0.08);
 }
 
 .language-divider {
