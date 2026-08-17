@@ -168,7 +168,7 @@ const translations = {
       "Find the Error",
 
     "home.game.tag3":
-      "Slang",
+      "Idioms",
 
     "home.game.tag4":
       "Verbs",
@@ -473,7 +473,7 @@ const translations = {
       "English practice meets game night.",
 
     "brilliant.hero.description":
-      "A colorful card game designed to help players practice English through pronunciation, verbs, slang, error detection and other language challenges.",
+      "A colorful card game designed to help players practice English through pronunciation, verbs, idioms, error detection and other language challenges.",
 
     "brilliant.hero.players":
       "👥 2+ players",
@@ -526,7 +526,7 @@ const translations = {
       "Spot what sounds wrong and identify the correct English.",
 
     "brilliant.challenges.slangTitle":
-      "Slang",
+      "Idioms",
 
     "brilliant.challenges.slangText":
       "Explore expressions you may actually hear in conversation.",
@@ -959,7 +959,7 @@ const translations = {
       "Encuentra el Error",
 
     "home.game.tag3":
-      "Slang",
+      "Modismos",
 
     "home.game.tag4":
       "Verbos",
@@ -1260,7 +1260,7 @@ const translations = {
       "La práctica de inglés se encuentra con la noche de juegos.",
 
     "brilliant.hero.description":
-      "Un colorido juego de cartas diseñado para ayudar a practicar inglés mediante pronunciación, verbos, slang, detección de errores y otros retos del idioma.",
+      "Un colorido juego de cartas diseñado para ayudar a practicar inglés mediante pronunciación, verbos, modismos, detección de errores y otros retos del idioma.",
 
     "brilliant.hero.players":
       "👥 2+ jugadores",
@@ -1313,7 +1313,7 @@ const translations = {
       "Identifica lo que suena incorrecto y encuentra el inglés correcto.",
 
     "brilliant.challenges.slangTitle":
-      "Slang",
+      "Modismos",
 
     "brilliant.challenges.slangText":
       "Explora expresiones que realmente podrías escuchar en una conversación.",
