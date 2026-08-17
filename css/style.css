@@ -1467,10 +1467,9 @@ p {
 
 
 /* =========================================================
-   RETAILERS
+   BRILLIANT RETAILERS
 ========================================================= */
 
-/* Mobile-first: one card per row */
 .retailer-grid {
   width: 100%;
   max-width: 1100px;
@@ -1480,15 +1479,20 @@ p {
   display: grid;
   grid-template-columns: 1fr;
 
-  gap: 18px;
+  gap: 22px;
 }
 
+
 .retailer-card {
-  min-width: 0;
+  min-height: 125px;
 
-  padding: 28px 22px;
+  padding: 24px;
 
-  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #ffffff;
 
   border: 1px solid var(--border);
   border-radius: var(--radius-md);
@@ -1496,38 +1500,94 @@ p {
   text-align: center;
 
   box-shadow: var(--shadow-soft);
-
-  transition:
-    transform 0.2s ease,
-    box-shadow 0.2s ease;
 }
 
+
 .retailer-name {
-  margin-bottom: 10px;
+  margin: 0;
 
   color: var(--purple-900);
 
   font-family: "Fredoka", sans-serif;
 
-  font-size: 1.6rem;
+  font-size: 1.55rem;
   font-weight: 700;
-  line-height: 1.15;
+
+  line-height: 1.2;
 }
 
-.retailer-card p {
-  margin-bottom: 0;
 
-  color: var(--ink-soft);
-}
+/* Help section below retailers */
 
 .retailer-help {
-  max-width: 500px;
+  width: 100%;
+  max-width: 520px;
 
-  margin: 35px auto 0;
+  margin: 38px auto 0;
 
   text-align: center;
 }
 
+.retailer-help p {
+  margin-bottom: 18px;
+}
+
+
+/* =========================================================
+   TABLET RETAILERS
+========================================================= */
+
+@media (min-width: 600px) and (max-width: 899px) {
+
+  .retailer-grid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+
+  /* Center the fifth card */
+  .retailer-card:nth-child(5) {
+    grid-column: 1 / -1;
+
+    width: calc(50% - 11px);
+
+    justify-self: center;
+  }
+
+}
+
+
+/* =========================================================
+   DESKTOP RETAILERS
+========================================================= */
+
+@media (min-width: 900px) {
+
+  .retailer-grid {
+    grid-template-columns:
+      repeat(6, minmax(0, 1fr));
+  }
+
+
+  /* First row: three equal cards */
+
+  .retailer-card:nth-child(1),
+  .retailer-card:nth-child(2),
+  .retailer-card:nth-child(3) {
+    grid-column: span 2;
+  }
+
+
+  /* Second row: centered pair */
+
+  .retailer-card:nth-child(4) {
+    grid-column: 2 / span 2;
+  }
+
+  .retailer-card:nth-child(5) {
+    grid-column: 4 / span 2;
+  }
+
+}
 /* =========================================================
    BRILLIANT CLASSES CROSS-PROMO
 ========================================================= */
