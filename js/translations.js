@@ -115,7 +115,7 @@ const translations = {
       "2+ players",
 
     "home.brilliant.feature2":
-      "Ages 10+",
+      "Ages 13+",
 
     "home.brilliant.feature3":
       "English challenges",
@@ -165,13 +165,13 @@ const translations = {
       "Pronunciation",
 
     "home.game.tag2":
-      "Find the Error",
+      "Find the Mistake",
 
     "home.game.tag3":
       "Idioms",
 
     "home.game.tag4":
-      "Verbs",
+      "Phrasal Verbs",
 
     "home.game.cta":
       "Discover Brilliant",
@@ -395,17 +395,17 @@ const translations = {
       "Practice, ask questions and build confidence through real communication.",
 
 
- "classes.teacher.eyebrow":
-  "Your teachers",
+    "classes.teacher.eyebrow":
+      "Your teachers",
 
-"classes.teacher.title":
-  "Learn with us.",
+    "classes.teacher.title":
+      "Learn with us.",
 
-"classes.teacher.description1":
-  "Our approach focuses on communication: helping our students move beyond knowing English on paper and feel confident using it in real-life situations.",
+    "classes.teacher.description1":
+      "Our approach focuses on communication: helping our students move beyond knowing English on paper and feel confident using it in real-life situations.",
 
-"classes.teacher.description2":
-  "Lessons are designed to feel personal, practical and relevant to the student on the other side of the screen.",
+    "classes.teacher.description2":
+      "Lessons are designed to feel personal, practical and relevant to the student on the other side of the screen.",
 
 
     "classes.testimonials.eyebrow":
@@ -464,13 +464,13 @@ const translations = {
     ===================================================== */
 
     "brilliant.hero.eyebrow":
-      "Learn through play",
+      "Learn by playing",
 
     "brilliant.hero.title":
       "English practice meets game night.",
 
     "brilliant.hero.description":
-      "A colorful card game designed to help players practice English through pronunciation, verbs, idioms, error detection and other language challenges.",
+      "A colorful card game designed to help you practice English through pronunciation, phrasal verbs, idioms, finding mistakes and other language challenges.",
 
     "brilliant.hero.players":
       "👥 2+ players",
@@ -495,7 +495,7 @@ const translations = {
       "What is Brilliant?",
 
     "brilliant.about.title":
-      "Practice English without making it feel like homework.",
+      "Practice English without feeling like you're doing homework.",
 
     "brilliant.about.description":
       "Brilliant brings language practice into a social setting, giving players a reason to speak, think, laugh and learn together.",
@@ -508,7 +508,7 @@ const translations = {
       "Put your English to work.",
 
     "brilliant.challenges.description":
-      "Brilliant keeps players engaged with different types of English-language challenges.",
+      "Brilliant keeps players involved with different types of English challenges.",
 
     "brilliant.challenges.pronunciationTitle":
       "Pronunciation",
@@ -517,25 +517,24 @@ const translations = {
       "Practice saying words clearly and confidently.",
 
     "brilliant.challenges.errorTitle":
-      "Find the Error",
+      "Find the Mistake",
 
     "brilliant.challenges.errorText":
-      "Spot what sounds wrong and identify the correct English.",
+      "Spot what sounds wrong and find the correct English.",
 
     "brilliant.challenges.slangTitle":
       "Idioms",
 
     "brilliant.challenges.slangText":
-      "Explore expressions you may actually hear in conversation.",
+      "Explore expressions you might actually hear in conversation.",
 
     "brilliant.challenges.verbsTitle":
-      "Verbs",
+      "Phrasal Verbs",
 
     "brilliant.challenges.verbsText":
       "Test your understanding of how verbs work in everyday English.",
 
-
-    "brilliant.box.eyebrow":
+         "brilliant.box.eyebrow":
       "Inside the box",
 
     "brilliant.box.title":
@@ -589,6 +588,10 @@ const translations = {
       "Reinforce language skills through repetition and interaction.",
 
 
+    /* =====================================================
+       WHERE TO FIND BRILLIANT
+    ===================================================== */
+
     "brilliant.buy.eyebrow":
       "Where to find Brilliant",
 
@@ -597,10 +600,10 @@ const translations = {
 
     "brilliant.buy.description":
       "Brilliant is available through selected bookstores and retailers.",
-     
-"brilliant.buy.availability":
-  "Online & In Store",
-     
+
+    "brilliant.buy.availability":
+      "Online & In Store",
+
     "brilliant.buy.retailerText":
       "Ask about Brilliant at participating locations.",
 
@@ -611,11 +614,15 @@ const translations = {
       "Ask Us on WhatsApp",
 
 
+    /* =====================================================
+       BRILLIANT → CLASSES
+    ===================================================== */
+
     "brilliant.classes.eyebrow":
       "Want more practice?",
 
     "brilliant.classes.title":
-      "Brilliant is only one way to learn with Gabby.",
+      "Brilliant is only one way to learn with us.",
 
     "brilliant.classes.description":
       "Explore personalized online English classes designed around your goals and real conversations.",
@@ -634,11 +641,8 @@ const translations = {
     "gabby.hero.title":
       "Hi, I'm Gabby. 👋",
 
-"gabby.hero.subtitle":
-  "Certified English teacher with 18 years of experience, founder of English With Gabby, and creator of Brilliant.",
-
-"gabby.bio.paragraph1":
-  "With 18 years of experience as a certified English teacher, I founded English With Gabby in 2020 with lots of determination and a desire to help people all over the world improve their English skills.",
+    "gabby.hero.subtitle":
+      "Certified English teacher with 18 years of experience, founder of English With Gabby, and creator of Brilliant.",
 
     "gabby.hero.description":
       "I believe learning English should help you feel more confident in real conversations, not more afraid of making mistakes.",
@@ -663,7 +667,7 @@ const translations = {
       "Teaching English with real life in mind.",
 
     "gabby.bio.paragraph1":
-      "English With Gabby is an online English school founded in 2020 with lots of determination and a desire to help people all over the world improve their English skills.",
+      "With 18 years of experience as a certified English teacher, I founded English With Gabby in 2020 with lots of determination and a desire to help people all over the world improve their English skills.",
 
     "gabby.bio.paragraph2":
       "Today, I am proud to say that we have enrolled students from all over the world, including the U.S., Canada, Mexico, Costa Rica, Korea, Ukraine, Italy, and many other countries.",
@@ -791,13 +795,17 @@ const translations = {
       "Explore English Classes",
 
 
-    /* Footer */
+    /* =====================================================
+       FOOTER
+    ===================================================== */
 
     "footer.tagline":
       "Learn. Speak. Play.",
 
 
-    /* WhatsApp */
+    /* =====================================================
+       WHATSAPP
+    ===================================================== */
 
     "whatsapp.message":
       "Hi! I found English With Gabby through your website and I'd like more information."
@@ -815,6 +823,8 @@ const translations = {
       "Saltar al contenido",
 
 
+    /* Navigation */
+
     "nav.home":
       "Inicio",
 
@@ -831,7 +841,9 @@ const translations = {
       "Contacto",
 
 
-    /* HOME */
+    /* =====================================================
+       HOME
+    ===================================================== */
 
     "home.hero.eyebrow":
       "Inglés para la vida real",
@@ -871,7 +883,7 @@ const translations = {
       "¿Cómo quieres practicar tu inglés?",
 
     "home.paths.description":
-      "Aprende uno a uno con una profesora o lleva el inglés a tu próxima noche de juegos.",
+      "Aprende uno a uno con un profesor o lleva el inglés a tu próxima noche de juegos.",
 
 
     "home.classes.label":
@@ -909,7 +921,7 @@ const translations = {
       "2+ jugadores",
 
     "home.brilliant.feature2":
-      "Desde 10 años",
+      "Desde 13 años",
 
     "home.brilliant.feature3":
       "Retos de inglés",
@@ -922,7 +934,7 @@ const translations = {
 
 
     "home.gabby.eyebrow":
-      "Conoce a tu profesora",
+      "Conoce a Gabby",
 
     "home.gabby.title":
       "¡Hola, soy Gabby! 👋",
@@ -931,7 +943,7 @@ const translations = {
       "El inglés debería ayudarte a conectar con otras personas, no hacer que tengas miedo de hablar.",
 
     "home.gabby.description2":
-      "English With Gabby se enfoca en comunicación práctica, aprendizaje personalizado y en ayudar a los estudiantes a desarrollar la confianza para realmente usar el idioma.",
+      "English With Gabby se enfoca en la comunicación práctica, el aprendizaje personalizado y en ayudar a los estudiantes a desarrollar la confianza para realmente usar el idioma.",
 
     "home.gabby.highlight1":
       "🌎 Estudiantes internacionales",
@@ -947,13 +959,13 @@ const translations = {
 
 
     "home.game.eyebrow":
-      "Aprender se encuentra con la noche de juegos",
+      "El aprendizaje se encuentra con la noche de juegos",
 
     "home.game.subtitle":
       "Aprende inglés sin sentir que estás estudiando.",
 
     "home.game.description":
-      "Brilliant convierte retos cotidianos del inglés en un juego social que puedes disfrutar con amigos y familia.",
+      "Brilliant convierte retos cotidianos de inglés en un juego social que puedes disfrutar con amigos y familia.",
 
     "home.game.tag1":
       "Pronunciación",
@@ -965,13 +977,12 @@ const translations = {
       "Modismos",
 
     "home.game.tag4":
-      "Verbos",
+      "Phrasal Verbs",
 
     "home.game.cta":
       "Descubre Brilliant",
 
-
-    "home.benefits.eyebrow":
+      "home.benefits.eyebrow":
       "Una forma diferente de aprender",
 
     "home.benefits.title":
@@ -1012,7 +1023,9 @@ const translations = {
       "Sigue a English With Gabby",
 
 
-    /* CLASSES */
+    /* =====================================================
+       CLASSES
+    ===================================================== */
 
     "classes.hero.eyebrow":
       "Clases personalizadas de inglés en línea",
@@ -1187,17 +1200,17 @@ const translations = {
       "Practica, haz preguntas y desarrolla confianza mediante comunicación real.",
 
 
-"classes.teacher.eyebrow":
-  "Tus profesores",
+    "classes.teacher.eyebrow":
+      "Tus profesores",
 
-"classes.teacher.title":
-  "Aprende con nosotros.",
+    "classes.teacher.title":
+      "Aprende con nosotros.",
 
-"classes.teacher.description1":
-  "Nuestro enfoque se centra en la comunicación: ayudar a nuestros estudiantes a ir más allá de conocer el inglés en papel y sentirse seguros usándolo en situaciones reales.",
+    "classes.teacher.description1":
+      "Nuestro enfoque se centra en la comunicación: ayudar a nuestros estudiantes a ir más allá de conocer el inglés en papel y sentirse seguros usándolo en situaciones reales.",
 
-"classes.teacher.description2":
-  "Las clases están diseñadas para sentirse personales, prácticas y relevantes para el estudiante al otro lado de la pantalla.",
+    "classes.teacher.description2":
+      "Las clases están diseñadas para sentirse personales, prácticas y relevantes para el estudiante al otro lado de la pantalla.",
 
 
     "classes.testimonials.eyebrow":
@@ -1239,7 +1252,7 @@ const translations = {
 
 
     "classes.contact.eyebrow":
-      "¿Lista para hablar más inglés?",
+      "¿Listo para hablar más inglés?",
 
     "classes.contact.title":
       "Descubramos si English With Gabby es para ti.",
@@ -1251,7 +1264,9 @@ const translations = {
       "Pregunta por las Clases de Inglés",
 
 
-    /* BRILLIANT */
+    /* =====================================================
+       BRILLIANT
+    ===================================================== */
 
     "brilliant.hero.eyebrow":
       "Aprende jugando",
@@ -1260,7 +1275,7 @@ const translations = {
       "La práctica de inglés se encuentra con la noche de juegos.",
 
     "brilliant.hero.description":
-      "Un colorido juego de cartas diseñado para ayudar a practicar inglés mediante pronunciación, verbos, modismos, detección de errores y otros retos del idioma.",
+      "Un colorido juego de cartas diseñado para ayudar a practicar inglés mediante pronunciación, phrasal verbs, modismos, identificación de errores y otros retos del idioma.",
 
     "brilliant.hero.players":
       "👥 2+ jugadores",
@@ -1319,10 +1334,10 @@ const translations = {
       "Explora expresiones que realmente podrías escuchar en una conversación.",
 
     "brilliant.challenges.verbsTitle":
-      "Verbos",
+      "Phrasal Verbs",
 
     "brilliant.challenges.verbsText":
-      "Pon a prueba tu comprensión de cómo funcionan los verbos en el inglés cotidiano.",
+      "Pon a prueba tu comprensión de los phrasal verbs usados en el inglés cotidiano.",
 
 
     "brilliant.box.eyebrow":
@@ -1388,9 +1403,9 @@ const translations = {
     "brilliant.buy.description":
       "Brilliant está disponible en librerías y tiendas seleccionadas.",
 
-     "brilliant.buy.availability":
-     "En línea y en tienda",
-     
+    "brilliant.buy.availability":
+      "En línea y en tienda",
+
     "brilliant.buy.retailerText":
       "Pregunta por Brilliant en las tiendas participantes.",
 
@@ -1405,7 +1420,7 @@ const translations = {
       "¿Quieres practicar más?",
 
     "brilliant.classes.title":
-      "Brilliant es solo una forma de aprender con Gabby.",
+      "Brilliant es solo una forma de aprender con nosotros.",
 
     "brilliant.classes.description":
       "Conoce las clases personalizadas de inglés en línea diseñadas alrededor de tus metas y conversaciones reales.",
@@ -1413,8 +1428,9 @@ const translations = {
     "brilliant.classes.cta":
       "Conoce las Clases de Inglés",
 
-
-    /* GABBY */
+         /* =====================================================
+       GABBY
+    ===================================================== */
 
     "gabby.hero.eyebrow":
       "Conoce a Gabby",
@@ -1422,11 +1438,8 @@ const translations = {
     "gabby.hero.title":
       "Hola, soy Gabby. 👋",
 
-"gabby.hero.subtitle":
-  "Profesora de inglés certificada con 18 años de experiencia, fundadora de English With Gabby y creadora de Brilliant.",
-
-"gabby.bio.paragraph1":
-  "Con 18 años de experiencia como profesora de inglés certificada, fundé English With Gabby en 2020 con mucha determinación y el deseo de ayudar a personas de todo el mundo a mejorar sus habilidades en inglés.",
+    "gabby.hero.subtitle":
+      "Profesora de inglés certificada con 18 años de experiencia, fundadora de English With Gabby y creadora de Brilliant.",
 
     "gabby.hero.description":
       "Creo que aprender inglés debería ayudarte a sentir más confianza en conversaciones reales, no más miedo de cometer errores.",
@@ -1451,7 +1464,7 @@ const translations = {
       "Enseñando inglés con la vida real en mente.",
 
     "gabby.bio.paragraph1":
-      "English With Gabby es una academia de inglés en línea fundada en 2020 con mucha determinación y con el deseo de ayudar a personas de todo el mundo a mejorar sus habilidades en inglés.",
+      "Con 18 años de experiencia como profesora de inglés certificada, fundé English With Gabby en 2020 con mucha determinación y el deseo de ayudar a personas de todo el mundo a mejorar sus habilidades en inglés.",
 
     "gabby.bio.paragraph2":
       "Hoy me enorgullece decir que hemos tenido estudiantes de distintas partes del mundo, incluyendo Estados Unidos, Canadá, México, Costa Rica, Corea, Ucrania, Italia y muchos otros países.",
@@ -1570,7 +1583,7 @@ const translations = {
       "Aprende con nosotros",
 
     "gabby.classes.title":
-      "¿Lista para trabajar en tu inglés?",
+      "¿Listo para trabajar en tu inglés?",
 
     "gabby.classes.description":
       "Conoce las clases personalizadas uno a uno y descubre cómo English With Gabby puede ayudarte a alcanzar tus metas.",
@@ -1579,9 +1592,17 @@ const translations = {
       "Conoce las Clases de Inglés",
 
 
+    /* =====================================================
+       FOOTER
+    ===================================================== */
+
     "footer.tagline":
       "Aprende. Habla. Juega.",
 
+
+    /* =====================================================
+       WHATSAPP
+    ===================================================== */
 
     "whatsapp.message":
       "¡Hola! Encontré English With Gabby en su página web y me gustaría recibir más información."
@@ -1589,3 +1610,4 @@ const translations = {
   }
 
 };
+     
