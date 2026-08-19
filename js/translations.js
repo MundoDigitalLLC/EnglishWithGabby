@@ -634,8 +634,11 @@ const translations = {
     "gabby.hero.title":
       "Hi, I'm Gabby. 👋",
 
-    "gabby.hero.subtitle":
-      "English teacher, founder of English With Gabby, and creator of Brilliant.",
+"gabby.hero.subtitle":
+  "Certified English teacher with 18 years of experience, founder of English With Gabby, and creator of Brilliant.",
+
+"gabby.bio.paragraph1":
+  "With 18 years of experience as a certified English teacher, I founded English With Gabby in 2020 with lots of determination and a desire to help people all over the world improve their English skills.",
 
     "gabby.hero.description":
       "I believe learning English should help you feel more confident in real conversations, not more afraid of making mistakes.",
@@ -1419,8 +1422,11 @@ const translations = {
     "gabby.hero.title":
       "Hola, soy Gabby. 👋",
 
-    "gabby.hero.subtitle":
-      "Profesora de inglés, fundadora de English With Gabby y creadora de Brilliant.",
+"gabby.hero.subtitle":
+  "Profesora de inglés certificada con 18 años de experiencia, fundadora de English With Gabby y creadora de Brilliant.",
+
+"gabby.bio.paragraph1":
+  "Con 18 años de experiencia como profesora de inglés certificada, fundé English With Gabby en 2020 con mucha determinación y el deseo de ayudar a personas de todo el mundo a mejorar sus habilidades en inglés.",
 
     "gabby.hero.description":
       "Creo que aprender inglés debería ayudarte a sentir más confianza en conversaciones reales, no más miedo de cometer errores.",
