@@ -395,20 +395,17 @@ const translations = {
       "Practice, ask questions and build confidence through real communication.",
 
 
-    "classes.teacher.eyebrow":
-      "Your teacher",
+ "classes.teacher.eyebrow":
+  "Your teachers",
 
-    "classes.teacher.title":
-      "Learn with Gabby.",
+"classes.teacher.title":
+  "Learn with us.",
 
-    "classes.teacher.description1":
-      "Gabby's approach is centered on communication: helping students move beyond knowing English on paper and become more comfortable actually using it.",
+"classes.teacher.description1":
+  "Our approach focuses on communication: helping our students move beyond knowing English on paper and feel confident using it in real-life situations.",
 
-    "classes.teacher.description2":
-      "Lessons are designed to feel personal, practical and relevant to the student sitting on the other side of the screen.",
-
-    "classes.teacher.cta":
-      "More About Gabby",
+"classes.teacher.description2":
+  "Lessons are designed to feel personal, practical and relevant to the student on the other side of the screen.",
 
 
     "classes.testimonials.eyebrow":
@@ -479,7 +476,7 @@ const translations = {
       "👥 2+ players",
 
     "brilliant.hero.age":
-      "🎯 Ages 10+",
+      "🎯 Ages 13+",
 
     "brilliant.hero.cards":
       "🃏 57 cards",
@@ -1184,20 +1181,17 @@ const translations = {
       "Practica, haz preguntas y desarrolla confianza mediante comunicación real.",
 
 
-    "classes.teacher.eyebrow":
-      "Tu profesora",
+"classes.teacher.eyebrow":
+  "Tus profesores",
 
-    "classes.teacher.title":
-      "Aprende con Gabby.",
+"classes.teacher.title":
+  "Aprende con nosotros.",
 
-    "classes.teacher.description1":
-      "El enfoque de Gabby se centra en la comunicación: ayudar a los estudiantes a ir más allá de conocer el inglés en papel y sentirse más cómodos realmente usándolo.",
+"classes.teacher.description1":
+  "Nuestro enfoque se centra en la comunicación: ayudar a nuestros estudiantes a ir más allá de conocer el inglés en papel y sentirse seguros usándolo en situaciones reales.",
 
-    "classes.teacher.description2":
-      "Las clases están diseñadas para sentirse personales, prácticas y relevantes para el estudiante al otro lado de la pantalla.",
-
-    "classes.teacher.cta":
-      "Más Sobre Gabby",
+"classes.teacher.description2":
+  "Las clases están diseñadas para sentirse personales, prácticas y relevantes para el estudiante al otro lado de la pantalla.",
 
 
     "classes.testimonials.eyebrow":
@@ -1266,7 +1260,7 @@ const translations = {
       "👥 2+ jugadores",
 
     "brilliant.hero.age":
-      "🎯 Desde 10 años",
+      "🎯 Desde 13 años",
 
     "brilliant.hero.cards":
       "🃏 57 cartas",
