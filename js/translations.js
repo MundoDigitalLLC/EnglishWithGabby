@@ -997,7 +997,7 @@ const translations = {
       "¡Hablemos!",
 
     "home.contact.title":
-      "¿Lista para empezar?",
+      "¿Listo para empezar?",
 
     "home.contact.description":
       "¿Tienes una pregunta sobre las clases o Brilliant? Nuestro equipo está a solo un mensaje de distancia.",
