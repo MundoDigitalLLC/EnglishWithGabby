@@ -209,10 +209,10 @@ const translations = {
       "Ready to start?",
 
     "home.contact.description":
-      "Have a question about classes or Brilliant? Gabby is just a message away.",
+      "Have a question about classes or Brilliant? Our team is just a message away.",
 
     "home.contact.whatsapp":
-      "Message Gabby on WhatsApp",
+      "Contact Us on WhatsApp",
 
     "home.contact.follow":
       "Follow English With Gabby",
@@ -368,13 +368,13 @@ const translations = {
       "Start with a conversation.",
 
     "classes.process.description":
-      "Tell Gabby what you want to accomplish and build your learning experience from there.",
+      "Tell us what you want to accomplish and we'll build your learning experience from there.",
 
     "classes.process.step1Title":
       "Say Hello",
 
     "classes.process.step1Text":
-      "Contact Gabby and tell her a little about yourself and why you want to improve your English.",
+      "Contact our team and tell us a little about yourself and why you want to improve your English.",
 
     "classes.process.step2Title":
       "Talk About Your Goals",
@@ -456,7 +456,7 @@ const translations = {
       "Let's find out if English With Gabby is right for you.",
 
     "classes.contact.description":
-      "Send Gabby a message, tell her what you want to work on, and ask about current class availability.",
+      "Send us a message, tell us what you want to work on, and ask about current class availability.",
 
     "classes.contact.whatsapp":
       "Ask About English Classes",
@@ -608,7 +608,7 @@ const translations = {
       "Need help finding a copy?",
 
     "brilliant.buy.whatsapp":
-      "Ask Gabby on WhatsApp",
+      "Ask Us on WhatsApp",
 
 
     "brilliant.classes.eyebrow":
@@ -659,14 +659,14 @@ const translations = {
     "gabby.bio.title":
       "Teaching English with real life in mind.",
 
-"gabby.bio.paragraph1":
-  "English With Gabby is an online English school founded in 2020 with lots of determination and a desire to help people all over the world improve their English skills.",
+    "gabby.bio.paragraph1":
+      "English With Gabby is an online English school founded in 2020 with lots of determination and a desire to help people all over the world improve their English skills.",
 
-"gabby.bio.paragraph2":
-  "Today, I am proud to say that we have enrolled students from all over the world, including the U.S., Canada, Mexico, Costa Rica, Korea, Ukraine, Italy, and many other countries.",
+    "gabby.bio.paragraph2":
+      "Today, I am proud to say that we have enrolled students from all over the world, including the U.S., Canada, Mexico, Costa Rica, Korea, Ukraine, Italy, and many other countries.",
 
-"gabby.bio.paragraph3":
-  "English With Gabby now has a team of excellent teachers who continue to provide exceptional, high-quality, private, and highly personalized classes.",
+    "gabby.bio.paragraph3":
+      "English With Gabby now has a team of excellent teachers who continue to provide exceptional, high-quality, private, and highly personalized classes.",
 
 
     "gabby.credentials.eyebrow":
@@ -776,7 +776,7 @@ const translations = {
 
 
     "gabby.classes.eyebrow":
-      "Learn with Gabby",
+      "Learn with English With Gabby",
 
     "gabby.classes.title":
       "Ready to work on your English?",
@@ -797,7 +797,7 @@ const translations = {
     /* WhatsApp */
 
     "whatsapp.message":
-      "Hi Gabby! I found English With Gabby through your website and I'd like more information."
+      "Hi! I found English With Gabby through your website and I'd like more information."
 
   },
 
@@ -1000,10 +1000,10 @@ const translations = {
       "¿Lista para empezar?",
 
     "home.contact.description":
-      "¿Tienes una pregunta sobre las clases o Brilliant? Gabby está a solo un mensaje de distancia.",
+      "¿Tienes una pregunta sobre las clases o Brilliant? Nuestro equipo está a solo un mensaje de distancia.",
 
     "home.contact.whatsapp":
-      "Escríbele a Gabby por WhatsApp",
+      "Contáctanos por WhatsApp",
 
     "home.contact.follow":
       "Sigue a English With Gabby",
@@ -1157,13 +1157,13 @@ const translations = {
       "Empieza con una conversación.",
 
     "classes.process.description":
-      "Cuéntale a Gabby lo que quieres lograr y construyan tu experiencia de aprendizaje a partir de ahí.",
+      "Cuéntanos lo que quieres lograr y construiremos tu experiencia de aprendizaje a partir de ahí.",
 
     "classes.process.step1Title":
       "Di Hola",
 
     "classes.process.step1Text":
-      "Comunícate con Gabby y cuéntale un poco sobre ti y por qué quieres mejorar tu inglés.",
+      "Comunícate con nuestro equipo y cuéntanos un poco sobre ti y por qué quieres mejorar tu inglés.",
 
     "classes.process.step2Title":
       "Habla de tus Metas",
@@ -1245,7 +1245,7 @@ const translations = {
       "Descubramos si English With Gabby es para ti.",
 
     "classes.contact.description":
-      "Escríbele a Gabby, cuéntale en qué quieres trabajar y pregunta por la disponibilidad actual de clases.",
+      "Envíanos un mensaje, cuéntanos en qué quieres trabajar y pregunta por la disponibilidad actual de clases.",
 
     "classes.contact.whatsapp":
       "Pregunta por las Clases de Inglés",
@@ -1395,7 +1395,7 @@ const translations = {
       "¿Necesitas ayuda para encontrar una copia?",
 
     "brilliant.buy.whatsapp":
-      "Pregúntale a Gabby por WhatsApp",
+      "Pregúntanos por WhatsApp",
 
 
     "brilliant.classes.eyebrow":
@@ -1444,14 +1444,14 @@ const translations = {
     "gabby.bio.title":
       "Enseñando inglés con la vida real en mente.",
 
-"gabby.bio.paragraph1":
-  "English With Gabby es una academia de inglés en línea fundada en 2020 con mucha determinación y con el deseo de ayudar a personas de todo el mundo a mejorar sus habilidades en inglés.",
+    "gabby.bio.paragraph1":
+      "English With Gabby es una academia de inglés en línea fundada en 2020 con mucha determinación y con el deseo de ayudar a personas de todo el mundo a mejorar sus habilidades en inglés.",
 
-"gabby.bio.paragraph2":
-  "Hoy me enorgullece decir que hemos tenido estudiantes de distintas partes del mundo, incluyendo Estados Unidos, Canadá, México, Costa Rica, Corea, Ucrania, Italia y muchos otros países.",
+    "gabby.bio.paragraph2":
+      "Hoy me enorgullece decir que hemos tenido estudiantes de distintas partes del mundo, incluyendo Estados Unidos, Canadá, México, Costa Rica, Corea, Ucrania, Italia y muchos otros países.",
 
-"gabby.bio.paragraph3":
-  "English With Gabby cuenta actualmente con un excelente equipo de profesores que continúa ofreciendo clases privadas, altamente personalizadas y de excelente calidad.",
+    "gabby.bio.paragraph3":
+      "English With Gabby cuenta actualmente con un excelente equipo de profesores que continúa ofreciendo clases privadas, altamente personalizadas y de excelente calidad.",
 
 
     "gabby.credentials.eyebrow":
@@ -1561,7 +1561,7 @@ const translations = {
 
 
     "gabby.classes.eyebrow":
-      "Aprende con Gabby",
+      "Aprende con English With Gabby",
 
     "gabby.classes.title":
       "¿Lista para trabajar en tu inglés?",
@@ -1578,7 +1578,7 @@ const translations = {
 
 
     "whatsapp.message":
-      "¡Hola Gabby! Encontré English With Gabby en tu página web y me gustaría recibir más información."
+      "¡Hola! Encontré English With Gabby en su página web y me gustaría recibir más información."
 
   }
 
