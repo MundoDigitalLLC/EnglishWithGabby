@@ -1467,9 +1467,10 @@ p {
 
 
 /* =========================================================
-   BRILLIANT RETAILERS
+   RETAILERS
 ========================================================= */
 
+/* Mobile-first: one card per row */
 .retailer-grid {
   width: 100%;
   max-width: 1100px;
@@ -1479,23 +1480,15 @@ p {
   display: grid;
   grid-template-columns: 1fr;
 
-  gap: 22px;
+  gap: 18px;
 }
 
-
 .retailer-card {
-  min-height: 125px;
+  min-width: 0;
 
-  padding: 24px;
+  padding: 28px 22px;
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-  gap: 10px;
-
-  background: #ffffff;
+  background: white;
 
   border: 1px solid var(--border);
   border-radius: var(--radius-md);
@@ -1509,59 +1502,32 @@ p {
     box-shadow 0.2s ease;
 }
 
-
 .retailer-name {
-  margin: 0;
+  margin-bottom: 10px;
 
   color: var(--purple-900);
 
   font-family: "Fredoka", sans-serif;
 
-  font-size: 1.55rem;
+  font-size: 1.6rem;
   font-weight: 700;
-
-  line-height: 1.2;
+  line-height: 1.15;
 }
 
+.retailer-card p {
+  margin-bottom: 0;
 
-.retailer-name a {
-  color: inherit;
-  text-decoration: none;
+  color: var(--ink-soft);
 }
-
-
-.retailer-availability {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-
-  min-height: 30px;
-
-  padding: 5px 12px;
-
-  background: var(--purple-100);
-
-  color: var(--purple-900);
-
-  border-radius: 999px;
-
-  font-size: 0.78rem;
-  font-weight: 800;
-}
-
 
 .retailer-help {
-  width: 100%;
-  max-width: 520px;
+  max-width: 500px;
 
-  margin: 38px auto 0;
+  margin: 35px auto 0;
 
   text-align: center;
 }
 
-.retailer-help p {
-  margin-bottom: 18px;
-}
 /* =========================================================
    BRILLIANT CLASSES CROSS-PROMO
 ========================================================= */
