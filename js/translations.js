@@ -779,7 +779,7 @@ const translations = {
 
 
     "gabby.classes.eyebrow":
-      "Learn with English With Gabby",
+      "Learn with us",
 
     "gabby.classes.title":
       "Ready to work on your English?",
@@ -1567,7 +1567,7 @@ const translations = {
 
 
     "gabby.classes.eyebrow":
-      "Aprende con English With Gabby",
+      "Aprende con nosotros",
 
     "gabby.classes.title":
       "¿Lista para trabajar en tu inglés?",
