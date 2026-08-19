@@ -597,7 +597,10 @@ const translations = {
 
     "brilliant.buy.description":
       "Brilliant is available through selected bookstores and retailers.",
-
+     
+"brilliant.buy.availability":
+  "Online & In Store",
+     
     "brilliant.buy.retailerText":
       "Ask about Brilliant at participating locations.",
 
@@ -1382,6 +1385,9 @@ const translations = {
     "brilliant.buy.description":
       "Brilliant está disponible en librerías y tiendas seleccionadas.",
 
+     "brilliant.buy.availability":
+     "En línea y en tienda",
+     
     "brilliant.buy.retailerText":
       "Pregunta por Brilliant en las tiendas participantes.",
 
