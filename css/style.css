@@ -811,6 +811,9 @@ p {
   display: grid;
 
   gap: 24px;
+
+  /* Makes both cards stretch to the same height */
+  align-items: stretch;
 }
 
 .path-card {
@@ -819,6 +822,12 @@ p {
   border-radius: var(--radius-lg);
 
   box-shadow: var(--shadow-soft);
+
+  /* NEW: allows content + buttons to align */
+  display: flex;
+  flex-direction: column;
+
+  height: 100%;
 }
 
 .classes-path-card {
@@ -904,20 +913,65 @@ p {
   color: var(--purple-900);
 
   font-weight: 800;
+
+  /* NEW: pushes both CTAs to the bottom */
+  margin-top: auto;
+
+  padding-top: 12px;
 }
 
+
+/* =========================================================
+   HOME PATH CARD IMAGES
+========================================================= */
+
 .mini-product-image {
-  max-width: 280px;
+  width: 100%;
+  max-width: 340px;
+
+  height: 260px;
 
   margin:
     0 auto
-    24px;
+    28px;
 
   padding: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
 
   background: white;
 
   border-radius: 24px;
+}
+
+
+/* Classes illustration fills its image area */
+
+.classes-card-image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: center;
+
+  border-radius: 15px;
+}
+
+
+/* Brilliant game remains fully visible */
+
+.brilliant-path-card .mini-product-image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+  object-position: center;
+
+  border-radius: 15px;
 }
 
 
