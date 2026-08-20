@@ -232,7 +232,7 @@ const translations = {
       "One-to-one English classes built around you: your goals, your questions, your pace and the English you actually want to use.",
 
     "classes.hero.cta":
-      "Ask About Classes",
+      "Book Your Free Demo Class",
 
     "classes.hero.learnMore":
       "See How It Works",
@@ -248,6 +248,9 @@ const translations = {
 
     "classes.hero.trust4":
       "🎯 Personalized",
+
+    "classes.hero.trust5":
+      "🗓️ Flexible scheduling",
 
 
     "classes.why.eyebrow":
@@ -365,38 +368,38 @@ const translations = {
       "How it works",
 
     "classes.process.title":
-      "Start with a conversation.",
+      "Start with your free demo class.",
 
     "classes.process.description":
-      "Tell us what you want to accomplish and we'll build your learning experience from there.",
+      "Meet your teacher, talk about your goals and experience how personalized English classes work before getting started.",
 
     "classes.process.step1Title":
-      "Say Hello",
+      "Book Your Free Demo",
 
     "classes.process.step1Text":
-      "Contact our team and tell us a little about yourself and why you want to improve your English.",
+      "Schedule a free 35-minute demo class and meet your teacher before committing to regular lessons.",
 
     "classes.process.step2Title":
       "Talk About Your Goals",
 
     "classes.process.step2Text":
-      "Identify what you want to improve and the situations where you most want to use English.",
+      "Use your demo class to talk about your level, goals, questions and the English you most want to use.",
 
     "classes.process.step3Title":
       "Build Your Plan",
 
     "classes.process.step3Text":
-      "Your classes can be shaped around your level, interests and learning priorities.",
+      "Your lessons are shaped around your level, interests, learning priorities and schedule.",
 
     "classes.process.step4Title":
       "Start Speaking",
 
     "classes.process.step4Text":
-      "Practice, ask questions and build confidence through real communication.",
+      "Choose a schedule that works for you and start building confidence through real communication.",
 
 
     "classes.teacher.eyebrow":
-      "Your teachers",
+      "Your Teachers",
 
     "classes.teacher.title":
       "Learn with us.",
@@ -405,7 +408,7 @@ const translations = {
       "Our approach focuses on communication: helping our students move beyond knowing English on paper and feel confident using it in real-life situations.",
 
     "classes.teacher.description2":
-      "Lessons are designed to feel personal, practical and relevant to the student on the other side of the screen.",
+      "Lessons are designed to feel personal, practical and relevant to each student's goals, level and everyday life.",
 
 
     "classes.testimonials.eyebrow":
@@ -450,14 +453,13 @@ const translations = {
       "Ready to speak more English?",
 
     "classes.contact.title":
-      "Let's find out if English With Gabby is right for you.",
+      "Book your free 35-minute demo class.",
 
     "classes.contact.description":
-      "Send us a message, tell us what you want to work on, and ask about current class availability.",
+      "Meet your teacher, talk about your goals and discover how personalized classes can fit your schedule.",
 
     "classes.contact.whatsapp":
-      "Ask About English Classes",
-
+      "Book Your Free Demo Class",
 
     /* =====================================================
        BRILLIANT
@@ -1023,7 +1025,7 @@ const translations = {
       "Sigue a English With Gabby",
 
 
-    /* =====================================================
+     /* =====================================================
        CLASSES
     ===================================================== */
 
@@ -1037,7 +1039,7 @@ const translations = {
       "Clases individuales de inglés creadas alrededor de ti: tus metas, tus preguntas, tu ritmo y el inglés que realmente quieres usar.",
 
     "classes.hero.cta":
-      "Pregunta por las Clases",
+      "Reserva tu Clase de Demostración Gratuita",
 
     "classes.hero.learnMore":
       "Mira Cómo Funciona",
@@ -1053,6 +1055,9 @@ const translations = {
 
     "classes.hero.trust4":
       "🎯 Personalizado",
+
+    "classes.hero.trust5":
+      "🗓️ Horarios flexibles",
 
 
     "classes.why.eyebrow":
@@ -1170,38 +1175,38 @@ const translations = {
       "Cómo funciona",
 
     "classes.process.title":
-      "Empieza con una conversación.",
+      "Empieza con tu clase de demostración gratuita.",
 
     "classes.process.description":
-      "Cuéntanos lo que quieres lograr y construiremos tu experiencia de aprendizaje a partir de ahí.",
+      "Conoce a tu profesor, conversa sobre tus metas y descubre cómo funcionan las clases personalizadas de inglés antes de comenzar.",
 
     "classes.process.step1Title":
-      "Di Hola",
+      "Reserva tu Clase de Demostración Gratuita",
 
     "classes.process.step1Text":
-      "Comunícate con nuestro equipo y cuéntanos un poco sobre ti y por qué quieres mejorar tu inglés.",
+      "Agenda una clase de demostración gratuita de 35 minutos y conoce a tu profesor antes de comenzar tus clases regulares.",
 
     "classes.process.step2Title":
       "Habla de tus Metas",
 
     "classes.process.step2Text":
-      "Identifica lo que quieres mejorar y las situaciones en las que más deseas usar el inglés.",
+      "Aprovecha tu clase de demostración para conversar sobre tu nivel, tus metas, tus preguntas y el inglés que más quieres usar.",
 
     "classes.process.step3Title":
       "Construye tu Plan",
 
     "classes.process.step3Text":
-      "Tus clases pueden adaptarse a tu nivel, intereses y prioridades de aprendizaje.",
+      "Tus clases se adaptan a tu nivel, intereses, prioridades de aprendizaje y horario.",
 
     "classes.process.step4Title":
       "Empieza a Hablar",
 
     "classes.process.step4Text":
-      "Practica, haz preguntas y desarrolla confianza mediante comunicación real.",
+      "Elige un horario que funcione para ti y comienza a desarrollar confianza mediante la comunicación real.",
 
 
     "classes.teacher.eyebrow":
-      "Tus profesores",
+      "Tus Profesores",
 
     "classes.teacher.title":
       "Aprende con nosotros.",
@@ -1210,7 +1215,7 @@ const translations = {
       "Nuestro enfoque se centra en la comunicación: ayudar a nuestros estudiantes a ir más allá de conocer el inglés en papel y sentirse seguros usándolo en situaciones reales.",
 
     "classes.teacher.description2":
-      "Las clases están diseñadas para sentirse personales, prácticas y relevantes para el estudiante al otro lado de la pantalla.",
+      "Las clases están diseñadas para sentirse personales, prácticas y relevantes para las metas, el nivel y la vida cotidiana de cada estudiante.",
 
 
     "classes.testimonials.eyebrow":
@@ -1255,15 +1260,14 @@ const translations = {
       "¿Listo para hablar más inglés?",
 
     "classes.contact.title":
-      "Descubramos si English With Gabby es para ti.",
+      "Reserva tu clase de demostración gratuita de 35 minutos.",
 
     "classes.contact.description":
-      "Envíanos un mensaje, cuéntanos en qué quieres trabajar y pregunta por la disponibilidad actual de clases.",
+      "Conoce a tu profesor, conversa sobre tus metas y descubre cómo las clases personalizadas pueden adaptarse a tu horario.",
 
     "classes.contact.whatsapp":
-      "Pregunta por las Clases de Inglés",
-
-
+      "Reserva tu Clase de Demostración Gratuita",
+     
     /* =====================================================
        BRILLIANT
     ===================================================== */
