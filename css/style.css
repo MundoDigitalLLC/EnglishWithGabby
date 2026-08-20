@@ -1896,7 +1896,58 @@ p {
   border-radius: var(--radius-md);
 
   box-shadow: var(--shadow-soft);
+
+  display: flex;
+  flex-direction: column;
+
+  height: 100%;
 }
+
+/* =========================================================
+   GOOGLE REVIEWS
+========================================================= */
+
+.review-stars {
+  margin-bottom: 10px;
+
+  color: #f4b400;
+
+  font-size: 1.15rem;
+  letter-spacing: 0.08em;
+
+  line-height: 1;
+}
+
+.review-source {
+  margin-top: auto;
+  padding-top: 18px;
+
+  color: var(--ink-soft);
+
+  font-size: 0.85rem;
+  font-weight: 700;
+
+  letter-spacing: 0.04em;
+}
+
+.reviews-google-link {
+  margin-top: 30px;
+
+  text-align: center;
+}
+
+.reviews-google-link a {
+  color: var(--purple-900);
+
+  font-weight: 800;
+
+  text-decoration: none;
+}
+
+.reviews-google-link a:hover {
+  text-decoration: underline;
+}
+
 
 .quote-mark {
   display: block;
@@ -1910,7 +1961,6 @@ p {
   font-size: 4rem;
   line-height: 0.8;
 }
-
 
 /* =========================================================
    CLASSES CONTACT
