@@ -1437,7 +1437,7 @@ const translations = {
     ===================================================== */
 
     "gabby.hero.eyebrow":
-      "Conoce a Gabby",
+      "Conoce a la fundadora",
 
     "gabby.hero.title":
       "Hola, soy Gabby. 👋",
