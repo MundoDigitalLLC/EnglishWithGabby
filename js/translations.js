@@ -128,7 +128,7 @@ const translations = {
 
 
     "home.gabby.eyebrow":
-      "Meet your teacher",
+      "Meet the founder",
 
     "home.gabby.title":
       "Hi, I'm Gabby! 👋",
@@ -638,7 +638,7 @@ const translations = {
     ===================================================== */
 
     "gabby.hero.eyebrow":
-      "Meet Gabby",
+      "Meet the founder",
 
     "gabby.hero.title":
       "Hi, I'm Gabby. 👋",
@@ -936,7 +936,7 @@ const translations = {
 
 
     "home.gabby.eyebrow":
-      "Conoce a Gabby",
+      "Conoce a la fundadora",
 
     "home.gabby.title":
       "¡Hola, soy Gabby! 👋",
@@ -957,7 +957,7 @@ const translations = {
       "🎯 Personalizado",
 
     "home.gabby.cta":
-      "Conoce a Gabby",
+      "Conoce a la fundadora",
 
 
     "home.game.eyebrow":
